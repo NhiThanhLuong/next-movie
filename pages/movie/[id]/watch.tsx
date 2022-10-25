@@ -37,13 +37,14 @@ const Watch: NextPage<Props> = ({ data, similar }) => {
               release_date={data.release_date}
               vote_average={data.vote_average}
             />
-          </div>
-          <div className="col-span-2 lg:col-span-4 col-end-13">
+            <div className="col-span-2 lg:col-span-4 col-end-13">
             <p className="text-2xl font-medium">SIMILAR</p>
             <div className="h-[45rem] overflow-y-auto">
               <ItemList items={similar} vertical />
             </div>
           </div>
+          </div>
+          
         </div>
       </div>
     </>
